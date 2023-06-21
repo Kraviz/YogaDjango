@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'core/css/clases.css' %}">
+<link rel="stylesheet" href="{% static 'core/css/home.css' %}"> {% endblock %}
+{% block title %} Clases {% endblock %}
+{% block content%}
+
+    <main>
+        <h2 id="titulo-clases"><span>Clases</span> Disponibles</h2>
+        <section class="clases-section">
+            <div class="card-container">
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(assets/imgs/clases/funcional2.jpeg)">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__heading">YOGA FUNCIONAL</h3>
+                    </div>
+
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(assets/imgs/clases/yoga2.jpeg)">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__heading">YIN YOGA </h3>
+                    </div>
+
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(assets/imgs/clases/zen2.jpeg)">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__heading">YOGA ZEN</h3>
+                    </div>
+
+                    </li>
+                    <a class="card" href="#">
+                        <div class="card__background" style="background-image: url(assets/imgs/clases/yoga.jpeg)">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__heading">YOGA</h3>
+                        </div>
+
+                    </a>
+                    <div>
+        </section>
+
+    </main>
+   {% endblock %}

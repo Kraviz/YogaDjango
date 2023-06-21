@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'core/css/register.css' %}">
+<link rel="stylesheet" href="{% static 'core/css/home.css' %}"> {% endblock %}
+{% block title %} Registrarse {% endblock %}
+{% block content%}
+    <main>
+        <div class="container-page" id="Container">
+            <div class="register-container" id="register-Container">
+                <h1 class="title">Registrarse</h1>
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-line-container">
+                                <span class="name-input">Rut:</span>
+                                <input type="text" name="username" class="input-line" id="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-line-container">
+                                <span class="name-input">Usuario:</span>
+                                <input type="text" name="username" class="input-line" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-line-container">
+                        <span class="name-input">Correo:</span>
+                        <input type="text" name="username" class="input-line" id="">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-line-container">
+                                <span class="name-input">Contraseña:</span>
+                                <input type="text" name="password" class="input-line" id="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-line-container">
+                                <span class="name-input">Repetir Contraseña:</span>
+                                <input type="text" name="password" class="input-line" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" value="Regitrarse" class="button-register">
+                    <a href="{% url 'login' %}">
+                        <div class="button-second">Iniciar sesión</div>
+                    </a>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    {% endblock %}
