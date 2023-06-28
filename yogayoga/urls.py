@@ -29,6 +29,7 @@ urlpatterns = [
     path('login/', views.login, name="login"),
     path('nosotros/', views.nosotros, name="nosotros"),
     path('admin/', admin.site.urls),
+    path('', include('crud.urls'))
 ]
 
 if settings.DEBUG:    

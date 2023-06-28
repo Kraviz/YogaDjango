@@ -14,7 +14,9 @@
             {% for producto in productos %}
                 <div id="centrado" class="col-sm-6 col-md-3 mb-3">
                     <figure id="product-card">
+                        {% if producto.img %}
                         <img class="productos-img" src="{{producto.img.url}}" alt="" id="product-card__image" />
+                        {% endif %}
                         <figcaption id="product-card__caption">
                             <header id="product-card__header">
                                 <h2 id="product-card__title">{{producto.titulo}}</h2>
