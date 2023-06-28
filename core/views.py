@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from crud.models import Producto
 
 # Create your views here.
 def index(request):
@@ -6,7 +7,8 @@ def index(request):
 def contacto(request):
     return render(request, 'core/contacto.html')
 def tienda(request):
-    return render(request, 'core/tienda.html')
+    productos = Producto.objects.all()
+    return render(request, 'core/tienda.html', {'productos': productos})
 def posturas(request):
     return render(request, 'core/posturas.html')
 def sucursales(request):
