@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Producto
+from .models import Producto, Contacto
 
 # Register your models here.
 class ProductoAdmin(admin.ModelAdmin):     
@@ -9,3 +9,5 @@ class ProductoAdmin(admin.ModelAdmin):
     ordering = ['titulo']
 
 admin.site.register(Producto, ProductoAdmin)
+
+admin.site.register(Contacto)
